@@ -52,7 +52,7 @@ body {
 			<li class="dorpdown">
 				<a href="#" class="dropdown-toggle"
 					data-toggle="dropdown" role="button" aria-haspopup="true"
-					aria-expanded="false">Connection<span class="caret"></span></a>
+					aria-expanded="false" style="color:red;">Connection<span class="caret"></span></a>
 				<ul class="dropdown-menu">
 					<li><a href="login.jsp">LOGIN</a></li>
 					<li> <a href="join.jsp">JOIN</a></li>
@@ -81,24 +81,24 @@ body {
 		<div class = "row">
 		<form method="post" action="writerAction.jsp">
 		<!-- table-striped은 게시판의 목록들이 홀수와 짝수 번갈아가면서 색상이 변경되는 것임 -->
-			<table class="table table-striped" style="text-align:center; border:1px solid #dddddd">
+			<table class="table table-striped" style="text-align:center; border:1px solid white;">
 				<thead> <!-- thead는테이블 의 맨 윗줄, 즉 제목같은거  -->
 					<tr> <!--하나의 행 한줄 을 의미 -->
-						<th colspan="2" style="background-color: #eeeeee; text-align:center;">게시판 글쓰기 양식</th>
+						<th colspan="2" style="background-color: white; text-align:center;"><h1>write</h1></th>
 						<!-- colspan="2" 두개의 행을 쓰겠다는거 -->
 					</tr>
 				</thead>
 				<tbody>	<!-- 글쓸 때 예시를 보여주는거 -->
 					<tr>
 						<tr>
-							<td><input type="text" class="form-control" placeholder="글 제목" name="bbsTitle" maxlength="50"></td>
+							<td><input type="text" class="form-control" placeholder="글 제목을 입력해주세요." name="bbsTitle" maxlength="50"></td>
 						</tr>
 						<tr>
-							<td><textarea class="form-control" placeholder="글 내용" name="bbsContent" maxlength="5000" style="height:350px"></textarea></td>
+							<td><textarea class="form-control" placeholder="내용을 작성해주세요." name="bbsContent" maxlength="5000" style="height:350px"></textarea></td>
 						</tr>
 				</tbody>
 			</table>
-				<input type="submit" class="btn btn-primary pull-right" value="글쓰기">
+				<input type="submit" class="btn btn-primary pull-right" style="background-color:#00107a; border-style: none;" value="write">
 			</form>
 		</div>
 	</div>

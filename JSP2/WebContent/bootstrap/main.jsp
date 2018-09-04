@@ -149,7 +149,7 @@ background-image:none;
 	</nav>
 	<!-- 이미지슬라이드 -->
 	<div class="container" >
-		<div id="myCarousel" class="carousel slide" data-ride="carousel"style="max-width: 1000px; margin: 0 auto">
+		<div z-index="10" id="myCarousel" class="carousel slide" data-ride="carousel"style="max-width: 1000px; margin: 0 auto">
 			<oi class="carousel-indicators">
 				<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
 				<li data-target="#myCarousel" data-slide-to="1" ></li>
@@ -203,7 +203,7 @@ background-image:none;
 	    								border: 2px solid #00107a;">email</a>
     				</div>
 			</div>
-			<div class="overlay overlay-hugeinc">
+			<div z-index="70" class="overlay overlay-hugeinc">
 			<button type="button" class="overlay-close">Close</button>
 			<nav>
 				<ul>
@@ -288,7 +288,7 @@ background-image:none;
 	<script src="/JSP2/FullscreenOverlayStyles/js/classie.js"></script>
 	<script src="/JSP2/FullscreenOverlayStyles/js/demo1.js"></script>
 	<script src="http://code.jquery.com/jquery-3.1.1.min.js"></script>
-	<script src="js/bootstrap.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>	
 	
 	
 	</body>

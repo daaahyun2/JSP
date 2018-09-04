@@ -14,10 +14,12 @@
 
 <title>@daaahyun</title>
 <style type="text/css">
-	a, a:hover {
+
+a, a:hover {
 	color:black;
-	text-decoration: none;}
-		body {
+	text-decoration: none;
+}
+body {
     background-color:white;
 }
 .navbar{
@@ -63,7 +65,7 @@
 			<li class="dorpdown">
 				<a href="#" class="dropdown-toggle"
 					data-toggle="dropdown" role="button" aria-haspopup="true"
-					aria-expanded="false">Connection<span class="caret"></span></a>
+					aria-expanded="false" style="color:red;">Connection<span class="caret"></span></a>
 				<ul class="dropdown-menu">
 					<li><a href="login.jsp">LOGIN</a></li>
 					<li> <a href="join.jsp">JOIN</a></li>
@@ -91,13 +93,13 @@
 	<div class = "container">
 		<div class = "row">
 		<!-- table-striped은 게시판의 목록들이 홀수와 짝수 번갈아가면서 색상이 변경되는 것임 -->
-			<table class="table table-striped" style="text-align:center; border:1px solid #dddddd">
-				<thead> <!-- thead는테이블 의 맨 윗줄, 즉 제목같은거  -->
+			<table class="table table-striped" style="text-align:center; border:1px solid white;">
+				<thead style="border-bottom: 6px solid #00107a;"> <!-- thead는테이블 의 맨 윗줄, 즉 제목같은거  -->
 					<tr> <!--하나의 행 한줄 을 의미 -->
-						<th style="background-color: #eeeeee; text-align:center;">번호</th>
-						<th style="background-color: #eeeeee; text-align:center;">제목</th>
-						<th style="background-color: #eeeeee; text-align:center;">작성자</th>
-						<th style="background-color: #eeeeee; text-align:center;">작성일</th>
+						<th style="background-color: white; text-align:center;">번호</th>
+						<th style="background-color: white; text-align:center;">제목</th>
+						<th style="background-color: white; text-align:center;">작성자</th>
+						<th style="background-color: white; text-align:center;">작성일</th>
 					</tr>
 				</thead>
 				<tbody>	<!-- 글쓸 때 예시를 보여주는거 -->
@@ -124,15 +126,15 @@
 			<%
 				if(pageNumber != 1){
 			%>
-				<a href="bbs.jsp?pageNumber=<%=pageNumber -1%>" class="btn btn-success btn-arraw-left">이전</a>
+				<a href="bbs.jsp?pageNumber=<%=pageNumber -1%>" class="btn btn-success btn-arraw-left" style="background-color:#00107a; border-style: none;">prev</a>
 			<%	
 				}if(bbsDAO.nextPage(pageNumber+1)){ //현재의 페이지가 아닌, 다음페이지가 존재하는지를 알아야 하니까 +1을 한거
 			%>
-				<a href="bbs.jsp?pageNumber=<%=pageNumber +1%>" class="btn btn-success btn-arraw-left">다음</a>
+				<a href="bbs.jsp?pageNumber=<%=pageNumber +1%>" class="btn btn-success btn-arraw-left" style="background-color:#00107a; border-style: none;">next</a>
 			<%		
 				}
 			%>
-			<a href="write.jsp" class="btn btn-primary pull-right">글쓰기</a>
+			<a href="write.jsp" class="btn btn-primary pull-right" style="background-color:#00107a; border-style: none;">write</a>
 		</div>
 	</div>
 	<script src="http://code.jquery.com/jquery-3.1.1.min.js"></script>
